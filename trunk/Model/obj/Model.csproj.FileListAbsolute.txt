@@ -1,0 +1,5 @@
+F:\web\ziuziu-cn\Model\obj\Debug\ResolveAssemblyReference.cache
+F:\web\ziuziu-cn\Model\bin\Debug\Ziuziu.Model.dll
+F:\web\ziuziu-cn\Model\bin\Debug\Ziuziu.Model.pdb
+F:\web\ziuziu-cn\Model\obj\Debug\Ziuziu.Model.dll
+F:\web\ziuziu-cn\Model\obj\Debug\Ziuziu.Model.pdb

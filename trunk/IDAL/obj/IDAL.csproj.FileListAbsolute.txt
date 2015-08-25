@@ -1,0 +1,12 @@
+F:\ziuziu-cn\IDAL\obj\Debug\ResolveAssemblyReference.cache
+F:\ziuziu-cn\IDAL\bin\Debug\Ziuziu.IDAL.dll
+F:\ziuziu-cn\IDAL\bin\Debug\Ziuziu.IDAL.pdb
+F:\ziuziu-cn\IDAL\bin\Debug\Ziuziu.Common.dll
+F:\ziuziu-cn\IDAL\bin\Debug\Ziuziu.Model.dll
+F:\ziuziu-cn\IDAL\bin\Debug\Ziuziu.Model.pdb
+F:\ziuziu-cn\IDAL\bin\Debug\Ziuziu.Common.pdb
+F:\ziuziu-cn\IDAL\obj\Debug\Ziuziu.IDAL.dll
+F:\ziuziu-cn\IDAL\obj\Debug\Ziuziu.IDAL.pdb
+F:\web\ziuziu-cn\IDAL\obj\Debug\ResolveAssemblyReference.cache
+F:\web\ziuziu-cn\IDAL\obj\Debug\Ziuziu.IDAL.dll
+F:\web\ziuziu-cn\IDAL\obj\Debug\Ziuziu.IDAL.pdb

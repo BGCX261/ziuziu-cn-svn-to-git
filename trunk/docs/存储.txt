@@ -1,0 +1,61 @@
+
+-- =============================================
+-- Author:		
+-- Create date: 080613
+-- Description:	添加修改 友情链接
+--				
+-- Return：		-300，重复；0,成功；-100,返回更新错误；-200，插入错误；
+-- ReturnValue：@lID
+-- =============================================
+CREATE PROCEDURE [dbo].[ADClass_InsertUpdate]
+(
+
+@cID int output,
+@cName nvarchar(100),
+@cOrder int,
+@cIP nvarchar(100),
+@cAddTime datetime,
+@cSiteID int,
+@cDj int,
+@cProvider int
+)
+AS
+DECLARE @vIsExtension INT
+BEGIN	
+	SET NOCOUNT ON;		
+	IF (@cAddTime IS NULL)
+		SELECT @cAddTime=GETDATE()
+	/*IF (LEN(@pExtension) > 0)
+		SELECT @vIsExtension = 1*/
+	BEGIN TRANSACTION
+	IF (@cProvider = 3) --更新
+	BEGIN			
+		UPDATE ADClass SET 
+	[cName] = @cName,[cOrder] = @cOrder,[cIP] = @cIP,[cAddTime] = @cAddTime,[cSiteID] = @cSiteID,[cDj] = @cDj
+	WHERE cID=@cID 
+		IF @@error <> 0
+		BEGIN			
+			ROLLBACK TRANSACTION
+			return -100
+		END
+
+	END
+	ELSE IF (@cProvider = 2)--插入
+	BEGIN
+		INSERT INTO ADClass(
+	[cName],[cOrder],[cIP],[cAddTime],[cSiteID],[cDj]
+	)VALUES(
+	@cName,@cOrder,@cIP,@cAddTime,@cSiteID,@cDj
+	)
+		IF @@error <> 0
+		BEGIN
+			ROLLBACK TRANSACTION			
+			return -200
+		END
+	END
+
+	COMMIT TRANSACTION
+	RETURN 0 
+    SET NOCOUNT OFF;
+END
+GO

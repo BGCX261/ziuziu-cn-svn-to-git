@@ -1,0 +1,5 @@
+F:\web\ziuziu-cn\DBUtility\bin\Debug\Ziuziu.DBUtility.dll
+F:\web\ziuziu-cn\DBUtility\bin\Debug\Ziuziu.DBUtility.pdb
+F:\web\ziuziu-cn\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+F:\web\ziuziu-cn\DBUtility\obj\Debug\Ziuziu.DBUtility.dll
+F:\web\ziuziu-cn\DBUtility\obj\Debug\Ziuziu.DBUtility.pdb

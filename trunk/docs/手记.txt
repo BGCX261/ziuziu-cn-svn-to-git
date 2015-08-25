@@ -1,0 +1,44 @@
+
+2008-7-6
+修改所有表的Status字段，值可以作为枚举，但是字段不能使用一个，因为需要查找多个条件的行。
+--------------------------------
+0为未审核1为审核IsCheck
+0为删除1为未删除IsDelete
+0为未读1为已读IsSee
+0为私有1为共有IsCommon
+--------------------------------
+针对不同情况，把各表的Status字段做出以上修改
+
+鉴于excel不能恢复修改，故使用word。
+
+足迹表Path增加PathID字段，int类型，代表：1代表我想去2代表我要去3代表我去过
+
+
+会员表Users增加三个字段
+会员表增加了点击次数字段VisitTimes，在会员页面显示被点击了多少次。
+IsForbid(bit)会员状态0代表禁用1代表正常
+LoginStatus(Int)1代表正常登录2代表隐身登录3代表离线
+
+
+增加推荐表CommendInfo和信息表完全一致
+把信息推荐到目的地和标签（标签即景点）当点击目的地或者标签的时候到该页面，在这个页面中
+需要有一篇推荐的信息
+
+2007-7-7
+开始数据库构建，存储及个别表的创建
+系统通用层用户活动属性的构建（ActiveType.cs）
+
+2007-7-8
+对个别数据库又作了修改
+照片回复表PhotoReply增加了UpdateDate字段
+信息回复表ArticleReply增加了UpdateDate字段
+站内消息表Message的两个字段from  to是关键字进行修改为FromID、ToID
+会员表Users字段Domain为关键字,修改为DomainName
+
+把所有表的基本存储写完，表名_InsertUpdate,即可添加也可修改，通用操作：Batch，分页：GetRecordByPageOrder
+个别需要关联的表还需要修改存储，不需要的表就是用目前存储。
+
+所有表增加IsDelete字段
+
+2008-7-22　By Guoyao
+Ziuziu.DBLayer.Article 增加添删改查方法
